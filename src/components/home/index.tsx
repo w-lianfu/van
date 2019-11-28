@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
-
-import AppRoot from '@commonComp/app-root';
-import { Button } from '@material-ui/core';
+import { observer } from 'mobx-react';
 import {
   deepOrange,
   green,
@@ -11,19 +9,23 @@ import {
   blue,
 } from '@material-ui/core/colors';
 
+import store from '@commonStore/test';
+import AppRoot from '@commonComp/app-root';
+import { Button } from '@material-ui/core';
+
 interface IProps {}
 interface IState {}
 
 const Home: FC = (props: IProps, state: IState) => {
   return (
     <AppRoot>
-      <p>Home</p>
+      <p>Home: {store.count}</p>
       <p>
-        <Button variant="contained" color="primary">华新镇华南路555号</Button>
+        <Button variant="contained" color="primary" onClick={store.increment}>华新镇华南路555号</Button>
       </p>
       <p>Hyphen</p>
       <p>
-        <Button variant="contained" color="secondary">华新镇华南路555号</Button>
+        <Button variant="contained" color="secondary" onClick={store.decrement}>华新镇华南路555号</Button>
       </p>
       <p>Hyphen</p>
       <p>
@@ -73,4 +75,4 @@ const Home: FC = (props: IProps, state: IState) => {
   )
 }
 
-export default Home;
+export default observer(Home);

@@ -20,6 +20,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
+    "experimentalDecorators": true,
     "paths": {
       "@/*": ["src/*"],
       "@common/*": ["src/common/*"],
