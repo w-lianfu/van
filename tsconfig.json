@@ -35,7 +35,7 @@
       "@tool/*": ["src/util/tools/*"],
       "@mixin/*": ["src/util/mixin/*"],
       "@lib/*": ["src/util/lib/*"],
-      "@muiConfig/*": ["src/util/mui-config/*"],
+      "@themeConfig/*": ["src/util/theme-config/*"],
       "@static/*": ["src/static/*"],
       "@icon/*": ["src/static/icon/*"],
       "@image/*": ["src/static/image/*"],
