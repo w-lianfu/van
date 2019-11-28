@@ -1,0 +1,18 @@
+@import './color.scss';
+
+div, section, p, ul, ol, li,
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol { list-style: none; }
+i, em { font-style: normal; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.none { display: none !important; }
+.hidden { visibility: hidden; }
