@@ -19,10 +19,13 @@ const theme = createMuiTheme({
   // 改变主题色
   palette: {
     primary: {
+      light: '#000',
       main: pink['A400'],
+      dark: pink['A700'],
     },
     secondary: {
       main: blue['A400'],
+      dark: blue['A700'],
     },
   },
   // 改变全局 material-ui 字体
