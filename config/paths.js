@@ -50,6 +50,7 @@ const moduleFileExtensions = [
   'json',
   'web.jsx',
   'jsx',
+  'scss',
 ];
 
 // Resolve file paths in the same order as webpack
@@ -83,8 +84,24 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
+  // 用户自定义
+  appCommon: resolveApp('src/common'),
+  commonComp: resolveApp('src/common/components'),
+  commonScss: resolveApp('src/common/scss'),
+  commonStore: resolveApp('src/common/store'),
+  commonStyled: resolveApp('src/common/styled'),
+  appComp: resolveApp('src/components'),
+  appCon: resolveApp('src/container'),
+  appScss: resolveApp('src/scss'),
+  appStore: resolveApp('src/store'),
+  appUtil: resolveApp('src/util'),
+  appTool: resolveApp('src/util/tools'),
+  appMixin: resolveApp('src/util/mixin'),
+  appLib: resolveApp('src/util/lib'),
+  appThemeConfig: resolveApp('src/util/theme-config'),
+  appStatic: resolveApp('src/static'),
+  appIcon: resolveApp('src/static/icon'),
+  appImage: resolveApp('src/static/image'),
 };
-
-
 
 module.exports.moduleFileExtensions = moduleFileExtensions;

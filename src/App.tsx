@@ -3,7 +3,7 @@ import {
   Button,
 } from '@material-ui/core';
 
-import './common/index.scss';
+import '@commonScss';
 
 const App: React.FC = () => {
   return (

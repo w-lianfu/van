@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build/dist",
     "target": "es5",
     "lib": [
       "dom",
@@ -17,9 +19,33 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "paths": {
+      "@/*": ["src/*"],
+      "@common/*": ["src/common/*"],
+      "@commonComp/*": ["src/common/components/*"],
+      "@commonScss/*": ["src/common/scss/*"],
+      "@commonStore/*": ["src/common/store/*"],
+      "@commonStyled/*": ["src/common/styled/*"],
+      "@comp/*": ["src/components/*"],
+      "@con/*": ["src/container/*"],
+      "@scss/*": ["src/scss/*"],
+      "@store/*": ["src/store/*"],
+      "@util/*": ["src/util/*"],
+      "@tool/*": ["src/util/tools/*"],
+      "@mixin/*": ["src/util/mixin/*"],
+      "@lib/*": ["src/util/lib/*"],
+      "@muiConfig/*": ["src/util/mui-config/*"],
+      "@static/*": ["src/static/*"],
+      "@icon/*": ["src/static/icon/*"],
+      "@image/*": ["src/static/image/*"],
+    }
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
   ]
 }
