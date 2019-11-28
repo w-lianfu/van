@@ -20,7 +20,7 @@ const ButtonConfig: IConfig = {
     },
     containedSecondary: {
       '&:hover': {
-        backgroundColor: blue[800],
+        backgroundColor: blue[700],
       },
     },
     label: {

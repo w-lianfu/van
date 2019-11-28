@@ -16,6 +16,7 @@ interface IProps {
 interface IState {}
 
 const theme = createMuiTheme({
+  // 改变主题色
   palette: {
     primary: {
       main: pink['A400'],
@@ -23,6 +24,15 @@ const theme = createMuiTheme({
     secondary: {
       main: blue['A400'],
     },
+  },
+  // 改变全局 material-ui 字体
+  typography: {
+    fontFamily: [
+      'Open Sans',
+      'Lato',
+      'Ubuntu',
+      'sans-serif'
+    ].join(','),
   },
   // 覆盖默认样式
   overrides: {

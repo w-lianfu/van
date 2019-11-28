@@ -1,26 +1,15 @@
 import React, { FC } from 'react';
-import {
-  Button,
-} from '@material-ui/core';
 
-import '@commonScss';
-import ThemeConfig from '@themeConfig/index'
+import AppRoot from '@commonComp/app-root';
+import ThemeConfig from '@themeConfig/index';
+import AppRouter from '@commonComp/app-router';
 
-const App: FC = () => {
-  return (
+const App: FC = () => (
+  <AppRoot>
     <ThemeConfig>
-      <div>
-        <h2>Home Page...</h2>
-        <p>
-          <Button variant="contained" color="primary">Bosten</Button>
-        </p>
-        <p>hello</p>
-        <p>
-          <Button variant="contained" color="secondary">深圳</Button>
-        </p>
-      </div>
+      <AppRouter />
     </ThemeConfig>
-  )
-}
+  </AppRoot>
+)
 
 export default App;
