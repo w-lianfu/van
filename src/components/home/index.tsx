@@ -8,6 +8,8 @@ import {
   pink,
   blue,
 } from '@material-ui/core/colors';
+import html2canvas from 'html2canvas';
+import domtoimage from 'dom-to-image';
 
 import store from '@commonStore/test';
 import AppRoot from '@commonComp/app-root';
@@ -17,6 +19,48 @@ interface IProps {}
 interface IState {}
 
 const Home: FC = (props: IProps, state: IState) => {
+
+  const base64ToBlob = (content: any) => {
+    let parts = content.split(';base64,');
+    let contentType = parts[0].split(':')[1];
+    let raw = window.atob(parts[1]);
+    let rawLength = raw.length;
+
+    let uInt8Array = new Uint8Array(rawLength);
+    for(let i = 0; i < rawLength; ++i) {
+      uInt8Array[i] = raw.charCodeAt(i);
+    }
+    return new Blob([uInt8Array], { type: contentType });
+  }
+
+  const downloadFile = (filename: string, content: any) => {
+    let link = document.createElement('a');
+    let blob = base64ToBlob(content);
+    link.download = filename;
+    link.href = URL.createObjectURL(blob);
+    link.click();
+  }
+
+  const saveAsCanvas = () => {
+    // @ts-ignore
+    html2canvas(document.body).then(function(canvas) {
+      let img = canvas.toDataURL('image/jpeg');
+      let filename = `Image${new Date().getTime()}.jpeg`;
+      downloadFile(filename, img);
+    });
+  }
+
+  const saveAsImage = () => {
+    let node = document.body;
+    // @ts-ignore
+    domtoimage.toJpeg(node, { quality: 1.0 }).then(dataUrl => {
+      let link = document.createElement('a');
+      link.download = `DomToImage${new Date().getTime()}.jpeg`;
+      link.href = dataUrl;
+      link.click();
+    });
+  }
+
   return (
     <AppRoot>
       <p>Home: {store.count}</p>
@@ -29,11 +73,14 @@ const Home: FC = (props: IProps, state: IState) => {
       </p>
       <p>Hyphen</p>
       <p>
-        <Button variant="contained" color="default">华新镇华南路555号</Button>
+        <Button variant="contained" color="default" onClick={saveAsCanvas}>Canvas转Image</Button>
       </p>
       <p>Hyphen</p>
       <p>
         <Button variant="contained" color="primary" disabled>华新镇华南路555号</Button>
+      </p>
+      <p>
+        <Button variant="contained" color="secondary" onClick={saveAsImage}>保存为图片</Button>
       </p>
       <p style={{color: pink['A400']}}>
         <label className="demo-label">pink:</label>
