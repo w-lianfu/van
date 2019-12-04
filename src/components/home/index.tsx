@@ -63,7 +63,9 @@ const Home: FC = (props: IProps, state: IState) => {
 
   return (
     <AppRoot>
+      <p>*** Start Start Start ***</p>
       <p>Home: {store.count}</p>
+      <h2>上海市青浦区华南路555号</h2>
       <p>
         <Button variant="contained" color="primary" onClick={store.increment}>华新镇华南路555号</Button>
       </p>
@@ -118,6 +120,94 @@ const Home: FC = (props: IProps, state: IState) => {
         <label className="demo-label">Ubuntu:</label>
         <span className="demo-span" style={{fontFamily: 'Ubuntu'}}>Here are some examples of customizing the component.</span>
       </p>
+      <p style={{color: purple['A400']}}>
+        <label className="demo-label">purple:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: red['A400']}}>
+        <label className="demo-label">red:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: green['A400']}}>
+        <label className="demo-label">green:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: deepOrange['A400']}}>
+        <label className="demo-label">deepOrange:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p>
+        <label className="demo-label">Open Sans:</label>
+        <span className="demo-span" style={{fontFamily: 'Open Sans'}}>Here are some examples of customizing the component.</span>
+      </p>
+      <p>
+        <label className="demo-label">Lato:</label>
+        <span className="demo-span" style={{fontFamily: 'Lato'}}>Here are some examples of customizing the component.</span>
+      </p>
+      <p>
+        <label className="demo-label">Ubuntu:</label>
+        <span className="demo-span" style={{fontFamily: 'Ubuntu'}}>Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: purple['A400']}}>
+        <label className="demo-label">purple:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: red['A400']}}>
+        <label className="demo-label">red:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: green['A400']}}>
+        <label className="demo-label">green:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: deepOrange['A400']}}>
+        <label className="demo-label">deepOrange:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p>
+        <label className="demo-label">Open Sans:</label>
+        <span className="demo-span" style={{fontFamily: 'Open Sans'}}>Here are some examples of customizing the component.</span>
+      </p>
+      <p>
+        <label className="demo-label">Lato:</label>
+        <span className="demo-span" style={{fontFamily: 'Lato'}}>Here are some examples of customizing the component.</span>
+      </p>
+      <p>
+        <label className="demo-label">Ubuntu:</label>
+        <span className="demo-span" style={{fontFamily: 'Ubuntu'}}>Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: purple['A400']}}>
+        <label className="demo-label">purple:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: red['A400']}}>
+        <label className="demo-label">red:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: green['A400']}}>
+        <label className="demo-label">green:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p style={{color: deepOrange['A400']}}>
+        <label className="demo-label">deepOrange:</label>
+        <span className="demo-span">Here are some examples of customizing the component.</span>
+      </p>
+      <p>
+        <label className="demo-label">Open Sans:</label>
+        <span className="demo-span" style={{fontFamily: 'Open Sans'}}>Here are some examples of customizing the component.</span>
+      </p>
+      <p>
+        <label className="demo-label">Lato:</label>
+        <span className="demo-span" style={{fontFamily: 'Lato'}}>Here are some examples of customizing the component.</span>
+      </p>
+      <p>
+        <label className="demo-label">Ubuntu:</label>
+        <span className="demo-span" style={{fontFamily: 'Ubuntu'}}>Here are some examples of customizing the component.</span>
+      </p>
+      <p>***9999***</p>
+      <p>***777***</p>
+      <p>***888***</p>
+      <p>*** End End End ***</p>
     </AppRoot>
   )
 }
