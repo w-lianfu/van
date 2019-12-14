@@ -9,6 +9,9 @@ import {
 } from '@material-ui/core/colors';
 
 import ButtonConfig from './button-config';
+import AppBarConfig from './app-bar';
+import TypographyConfig from './typography';
+import ToolbarConfig from './toolbar';
 
 interface IProps {
   children?: ReactNode,
@@ -40,6 +43,9 @@ const theme = createMuiTheme({
   // 覆盖默认样式
   overrides: {
     ...ButtonConfig,
+    ...AppBarConfig,
+    ...TypographyConfig,
+    ...ToolbarConfig,
   },
 });
 

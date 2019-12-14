@@ -37,7 +37,19 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 * `deepOrange['A400']`
 
 ### 字体支持
+
 * `Open Sans`
 * `Source Sans Pro`
 * `Lato`
 * `Ubuntu`
+
+### Button
+
+* primary button:
+  * `<Button variant="contained" color="primary">Van</Button>`
+* secondary button:
+  * `<Button variant="contained" color="secondary">Van</Button>`
+* default button:
+  * `<Button variant="contained">Van</Button>`
+* disabled button:
+  * `<Button variant="contained" disabled>Van</Button>`

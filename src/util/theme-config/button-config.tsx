@@ -1,4 +1,4 @@
-import { purple } from '@material-ui/core/colors';
+import { purple, grey } from '@material-ui/core/colors';
 
 interface IConfig {
   MuiButton: object,
@@ -18,7 +18,7 @@ const ButtonConfig: IConfig = {
       },
     },
     contained: {
-      color: '#fff',
+      color: grey[50],
       backgroundColor: purple['A400'],
       boxShadow: `0px 2px 4px -1px rgba(0, 0, 0, 0.2),
         0px 4px 5px 0px rgba(0, 0, 0, 0.14),

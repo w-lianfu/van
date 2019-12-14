@@ -1,10 +1,10 @@
 @import './color.scss';
 
-.demo-label {
-  display: inline-flex;
-  width: 130px;
-  font-size: 16px;
+#root {
+  display: flex;
+  justify-content: center;
 }
-.demo-span {
-  font-size: 16px;
+
+.home-paper {
+  width: 1100px;
 }
