@@ -35,3 +35,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 * `red['A400']`
 * `green['A400']`
 * `deepOrange['A400']`
+
+### 字体支持
+* `Open Sans`
+* `Source Sans Pro`
+* `Lato`
+* `Ubuntu`
