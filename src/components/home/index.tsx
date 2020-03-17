@@ -69,6 +69,10 @@ const Home: FC = (props: IProps, state: IState) => {
         <label className="demo-label">Ubuntu:</label>
         <span className="demo-span" style={{fontFamily: 'Ubuntu'}}>Here are some examples of customizing the component.</span>
       </p>
+
+      <footer>
+        <a href="http://beian.miit.gov.cn/" target="_blank">浙ICP备17060547号</a>
+      </footer>
     </AppRoot>
   )
 }
